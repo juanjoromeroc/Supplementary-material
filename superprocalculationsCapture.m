@@ -4,7 +4,6 @@ c=actxserver('Excel.Application');
 % set(c, 'Visible', 1)
 d=c.Workbooks;
 e=d.Open(strcat(pwd,'\Capture membrane.xlsm'));
-%e=d.Open('C:\Users\Juan Jose Romero\Desktop\Supplementary short\Capture membrane.xlsm');
 f= e.Sheets.Item('Multiple Column');
 g = f.Range('B1');
     g.Value=strcat(pwd,'\Capture membrane.spf');
